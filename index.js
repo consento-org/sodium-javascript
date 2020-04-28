@@ -20,7 +20,7 @@ var gf = function(init) {
 };
 
 // also forwarded at the bottom but randombytes is non-enumerable
-var randombytes = require('./randombytes').randombytes
+var randombytes = require('@consento/sync-randombytes')
 
 var _0 = new Uint8Array(16);
 var _9 = new Uint8Array(32); _9[0] = 9;
@@ -1827,7 +1827,7 @@ sodium.crypto_sign_verify_detached = crypto_sign_verify_detached
 forward(require('./crypto_generichash'))
 forward(require('./crypto_kdf'))
 forward(require('./crypto_shorthash'))
-forward(require('./randombytes'))
+sodium.randombytes_buf = require('@consento/sync-randombytes')
 forward(require('./crypto_stream'))
 
 sodium.crypto_scalarmult_BYTES = crypto_scalarmult_BYTES
