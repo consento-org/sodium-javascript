@@ -94,11 +94,11 @@ jobs:
           #  os: ubuntu-latest
           #  type: node
           #  node-version: 6
-          - id: ubuntu:node:7
-            build: false
-            os: ubuntu-latest
-            type: node
-            node-version: 7
+          #- id: ubuntu:node:7
+          #  build: false
+          #  os: ubuntu-latest
+          #  type: node
+          #  node-version: 7
           - id: ubuntu:node:8
             build: false
             os: ubuntu-latest
