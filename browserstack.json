@@ -1,0 +1,51 @@
+{
+  "browsers": [{
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "IE",
+    "browser_version": "latest"
+  },
+  {
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "Edge",
+    "browser_version": "18.0"
+  },
+  {
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "Edge",
+    "browser_version": "latest"
+  },
+  {
+    "os": "OS X",
+    "os_version": "Catalina",
+    "browser": "Safari",
+    "browser_version": "13"
+  },
+  {
+    "type": "browser",
+    "os": "OS X",
+    "os_version": "Catalina",
+    "browser": "Firefox",
+    "browser_version": "latest"
+  },
+  {
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "Chrome",
+    "browser_version": "81"
+  },
+  {
+    "os": "ios",
+    "os_version": "12",
+    "browser": "iPhone",
+    "device": "iPhone XS"
+  },
+  {
+    "os": "android",
+    "os_version": "9.0",
+    "browser": "android",
+    "device": "Google Pixel 3"
+  }]
+}
