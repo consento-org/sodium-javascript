@@ -35,7 +35,7 @@
   },
   "scripts": {
     "pretest": "standard",
-    "test": "node test.js",
+    "test": "node --experimental-worker test.js",
     "test-browser": "browserify test.js | tape-run",
     "test-android": "rn-tape run android"
   },
