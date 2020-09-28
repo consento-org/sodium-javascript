@@ -2,9 +2,9 @@ name: Testing on devices
 
 on:
   push:
-    branches: [ main ]
+    branches: [ rn-tape ]
   pull_request:
-    branches: [ main ]
+    branches: [ rn-tape ]
   workflow_dispatch:
 
 jobs:
