@@ -158,7 +158,8 @@ jobs:
       run: npm test
       if: ${{ matrix.type == 'node' }}
     - name: Run on device
-      run: npx rn-tape run ${{ matrix.system }}
+      # idleTimeout is set to one hour since the tests are super slow
+      run: npx rn-tape run --idleTimeout 3600 ${{ matrix.system }}
       if: ${{ matrix.system }}
       env:
         GITHUB_CONTEXT: ${{ toJson(matrix) }}
