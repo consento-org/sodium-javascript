@@ -8,7 +8,9 @@ if (typeof Buffer === 'undefined') {
 // We shold delete the WebAssembly global in that case so that the tests pass
 if (typeof WebAssembly !== 'undefined' && global.WebAssembly) {
   const canMakeInstance = global.WebAssembly.Instance || global.WebAssembly.instantiate
-  global.WebAssembly = undefined
+  if (canMakeInstance) {
+    global.WebAssembly = undefined
+  }
 }
 
 require('sodium-test')(require('.'))
