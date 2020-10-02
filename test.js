@@ -2,8 +2,8 @@ if (typeof Buffer === 'undefined') {
   global.Buffer = require('buffer').Buffer
 }
 
-if(typeof WebAssembly !== 'undefined' && WebAssembly) {
-  console.log('# WebAssembly', WebAssembly.Instance, WebAssembly.instantiate)
+if(typeof WebAssembly !== 'undefined' && global.WebAssembly) {
+  console.log('# WebAssembly', global.WebAssembly.Instance, global.WebAssembly.instantiate)
 }
 
 require('sodium-test')(require('.'))
