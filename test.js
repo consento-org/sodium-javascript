@@ -2,7 +2,7 @@ if (typeof Buffer === 'undefined') {
   global.Buffer = require('buffer').Buffer
 }
 
-if(typeof WebAssembly !== 'undefined' && global.WebAssembly) {
+if (typeof WebAssembly !== 'undefined' && global.WebAssembly) {
   console.log('# WebAssembly', global.WebAssembly.Instance, global.WebAssembly.instantiate)
 }
 
