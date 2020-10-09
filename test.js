@@ -4,11 +4,14 @@ if (typeof Buffer === 'undefined') {
   global.Buffer = require('buffer').Buffer
 }
 
+// We should make sure there is a randombytes implementation
+require('get-random-values-polypony').polyfill()
+
 // iOS defines a WebAssembly global, but doesn't provide a way to create instances
 // We shold delete the WebAssembly global in that case so that the tests pass
 if (typeof WebAssembly !== 'undefined' && global.WebAssembly) {
   const canMakeInstance = global.WebAssembly.Instance || global.WebAssembly.instantiate
-  console.log('WASM', canMakeInstance, global.WebAssembly.Instance, global.WebAssembly.instantiate)
+  console.log('# WASM', canMakeInstance, global.WebAssembly.Instance, global.WebAssembly.instantiate)
   if (!canMakeInstance) {
     global.WebAssembly = undefined
   }
