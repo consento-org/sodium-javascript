@@ -26,12 +26,8 @@
     ]
   },
   "browser": {
-    "crypto": false
-  },
-  "react-native": {
     "crypto": false,
-    "tape": "fresh-tape",
-    "./memory": "./memory-rn"
+    "worker_threads": false
   },
   "scripts": {
     "pretest": "standard",
