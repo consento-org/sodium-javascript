@@ -29,7 +29,7 @@
     "crypto": false
   },
   "react-native": {
-    "crypto": "crypto",
+    "crypto": false,
     "tape": "fresh-tape",
     "./memory": "./memory-rn"
   },
